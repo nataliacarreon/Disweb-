@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+#container{
+    width: 70%;
+    background-color: rgba(53, 68, 148, .8);
+    margin: 0 auto;
+    padding: 1em;
+}
+h1{
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: rgba(245, 34, 70, .8) 20px solid;
+}
+
+.rojo{
+    color: red;
+}
+article{
+    border: solid 3px rgba(103, 122, 224, 1); 
+    padding: 1rem;
+}
+.primero{
+    margin: 10px 30px 40px 50px;
+    background-color: #677AE0;
+    padding: 1rem;
+}
