@@ -66,6 +66,17 @@ h1{
 }
 .container{
     color: rgb(173, 104, 153);
-    background-color: #F8D1FE;
+		background-color: #F8D1FE;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px;
 
+}
+
+/*a .icon {
+width: 20px;
+}*/
+
+footer img {
+	width: 50px;
 }
