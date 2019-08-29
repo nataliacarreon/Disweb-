@@ -58,7 +58,7 @@ html {
 /*aqui inica mi estilo*/
 
 body{
-    background-color: #D7C4FF;
+    background-color: rgb(227, 218, 247);
 }
 h1{
     color: #FF938B;
@@ -67,11 +67,24 @@ h1{
 .container{
     color: rgb(173, 104, 153);
 		background-color: #F8D1FE;
+		margin: 0 auto;
+		width: 80%;
+		height: 100vh;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
-		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-columns: repeat(8,1fr);
+		grid-template-rows: 200px 2fr 1fr 1fr 100px;
+		grid-gap: 10px;
 
 }
+
+h1{
+	color: black;
+}
+
+h1, h2, p, li{
+	padding: 1.5rem;
+}
+
 
 /*a .icon {
 width: 20px;
@@ -79,4 +92,23 @@ width: 20px;
 
 footer img {
 	width: 50px;
+}
+
+header{
+	background-color: #FF938B;
+	/*grid-column-start: 2;
+	grid-column-end: 7;*/
+	grid-column: 2/7;
+}
+
+main	{
+	background-color: #D7C4FF;
+	grid-column: 1/8;
+	grid-row: 2/5;
+}
+
+footer{
+	background-color: aliceblue;
+	/*fila inicio,columna inicio,filaend,columna end*/
+	grid-area: 5 / 1 / 6 / 9;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grtid 2</title>
+    <style>
+    .container{
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: 
+        ". . . . . . . ."
+        ". h h h h h h ."
+        ". a a a . . . as"
+        ". a a a . . . as"
+        ". . . . . . . as"
+        ". f f f f . . ."
+    }
+
+
+
+    .child{
+        border: solid grey 1px;
+        background-color: #D7C4FF;
+    }
+    header {
+        grid-area: h;
+    }
+    article{
+        grid-area: a;
+    }
+    aside{
+        grid-area: as;
+    }
+    footer{
+        grid-area: f;
+    }
+
+    section{
+        grid-area: 2 / 3 / 6 / 9;
+        background-color: rgba(227, 100, 110, 0.531);
+        z-index: 2;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="child">
+            <p>Header</p>
+        </header>
+        <article class="child">
+            <p>Article</p>
+        </article >
+        <aside class="child">
+            <p>Aside</p></aside>
+            <section></section>
+        <footer class="child">
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+</html>
