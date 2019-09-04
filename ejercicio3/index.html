@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria e Imágenes</title>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+    <style>
+            .ocultar{
+                display: none;
+            }
+
+            .lg-sub-html h4 {
+            margin: 0;
+            font-size: 5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            .lg-sub-html p {
+            font-size: 2rem;
+            margin: 5px 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header></header>
+        <section>
+            <h1>Galería</h1>
+            <p>Aquí estan mis trajos</p>
+                <div id="lightgallery">
+                  <a href="img/img1.jpg" data-sub-html="#caption1">
+                      <img src="img/thumb1.jpg" alt="fotografía blanco y negro uno"/>
+                  </a>
+                  <a href="img/img2.jpg" data-sub-html="#caption2">
+                      <img src="img/thumb2.jpg" alt="fotografía blanco y negro"/>
+                  </a>
+                  <a href="img/img3.jpg" data-sub-html="#caption3">
+                    <img src="img/thumb3.jpg" alt="fotografía blanco y negro"/>
+                </a>
+                <a href="img/img4.jpg" data-sub-html="#caption4">
+                    <img src="img/thumb4.jpg" alt="fotografía blanco y negro"/>
+                </a>
+            </div>
+            <div id="caption1" class="ocultar">
+                <h4>Regina</h4>
+                <p>Fotografía de regina 1</p>
+            </div>
+            <div id="caption2" class="ocultar">
+                <h4>Regina</h4>
+                <p>Fotografía de regina 2</p>
+            </div>
+            <div id="caption3" class="ocultar">
+                    <h4>Samuel</h4>
+                    <p>Fotografía de Samu</p>
+                </div>
+                <div id="caption4" class="ocultar">
+                        <h4>Regina</h4>
+                        <p>Fotografía de regina 3</p>
+                    </div>
+        </section>
+    </div>
+
+     <!-- jQuery version must be >= 1.8.0; -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="js/lightgallery-all.js"></script>
+ 
+     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+ 
+     <!-- lightgallery plugins -->
+     <script src="modules/lg-thumbnail.min.js"></script>
+     <script src="modules/lg-fullscreen.min.js"></script>
+
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+        });
+    </script>
+
+
+
+</body>
+</html>
