@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes BPG</title>
+    <script type="text/javascript" src="js/bpgdec8a.js"></script>
+    <style>
+     .container {
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "h h h h"
+        "s s s s"
+        "f f f f"
+    }
+
+    header{
+        grid-area: h;
+        background-color: black;
+    }
+
+    figure {
+        grid-area: s;
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        background-color: white;
+    }
+    footer{
+        grid-area: f;
+    }
+
+    h1{
+        color: white;
+    }
+    body{
+        background-image: url(img/thumb4.jpg);
+    }
+   
+    </style>
+    
+   
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IMAGEN REGINA</h1>
+        </header>
+        <main>
+            <h2>Imagen bpg</h2>
+            <figure>
+                <img src="img/img2_g1000.bpg" alt="Regina leyendo" width="1000">
+            </figure>
+        </main>
+        <footer>SAlU2</footer>
+    </div>
+</body>
+</html>
