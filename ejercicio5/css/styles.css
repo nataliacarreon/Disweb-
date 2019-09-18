@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+}
+#container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+
+section{
+    border: solid 1px pink;
+}
+
+figure{
+    width: 100%;
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.4rem;
+}
+
+#pan{
+    width: 250px;
+    float: left;
+    shape-outside: circle(51px at center center);
+}
+#pan2{
+    width: 300px;
+    float: left;
+    shape-outside: url(../img/580b57fbd9996e24bc43c0ac.png);
+    shape-margin: .3rem;
+}
+
+#pan3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    shape-outside: polygon(30.5% 29px, 56.25% 36.68%, 84.5% 82.36%, 207px 104.95%);
+}
+
+#pan4{
+    width: 300px;
+    float: left;
+    shape-outside: polygon(24.59% 10.88%, 62.49% 0.24%, 89.06% 10.34%, 104.75% 43.15%, 96.25% 87.12%, 80.06% 89.34%, 65.01% 78.24%, 44.56% 83.19%, 34.54% 95.55%, 5.68% 101.91%, 2.27% 68.33%, 12.95% 54.11%, 8.6% 35.82%, 21.22% 27.86%);
+    clip-path: polygon(24.59% 10.88%, 62.49% 0.24%, 89.06% 10.34%, 104.75% 43.15%, 96.25% 87.12%, 80.06% 89.34%, 65.01% 78.24%, 44.56% 83.19%, 34.54% 95.55%, 5.68% 101.91%, 2.27% 68.33%, 12.95% 54.11%, 8.6% 35.82%, 21.22% 27.86%);
+}
