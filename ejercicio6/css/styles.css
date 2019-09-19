@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+  #container {
+      width: 80%;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: grey;
+      display: flex;
+      /*flex-direction: column-reverse;*/
+      /*flex-wrap: wrap;*/
+      /*flex-flow: column-reverse wrap-reverse; une los dos anteriores*/
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  secction {
+      border: solid black 1px;
+      /* width: 400px; */
+  }
+
+  p {
+      padding: 1rem;
+  }
+ .uno{
+     background-color: pink;
+     height: 100px;
+ }
+
+ .dos{
+    background-color: pink;
+    height: 56px;
+}
+
+.tres{
+    background-color: pink;
+    /* height: 67px; */
+    align-self: baseline stretch;
+}
+
+.cuatro{
+    background-color: pink;
+    height: 34ps;
+    align-self: flex-end;
+}
+
+.cinco{
+    background-color: pink;
+    height: 100px;
+}
+
+.seis{
+    background-color: pink;
+    height: 100px;
+}
+
+#wrapper2 {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: violet;
+    display: flex;
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: wrap;*/
+    /*flex-flow: column-reverse wrap-reverse; une los dos anteriores*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.box{
+    width: 300px;
+    border: solid black;
+    flex-basis: 20%;
+}
