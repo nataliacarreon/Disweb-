@@ -4,19 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ej8</title>
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
                 <ul>
-                    <li></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+            <section class="uno"><h2>Sección 1</h2></section>
+            <section class="dos"><h2>Sección 2</h2></section>
+            <section class="tres"><h2>Sección 3</h2></section>
+        </main>
+        <footer>
+            <h2>Bye bye</h2>
+        </footer>
     </div>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+    ScrollReveal().reveal('.uno', {duration: 600,
+    easing: 'cubic-bezier(0, 0, 0, 3)',
+    interval: 0,
+    opacity: 0,
+    origin: 'top',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 60 }});
+    ScrollReveal().reveal('.dos', {duration: 600,
+    easing: 'cubic-bezier(0, 0, 0, 3)',
+    distance: '100px',
+    opacity: 0,
+    origin: 'rigth',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 60 }});
+    ScrollReveal().reveal('.tres', {duration: 800,
+    easing: 'cubic-bezier(0, 0, 0, 3)',
+    distance: '300px',
+    opacity: 0,
+    origin: 'rigth',
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 60 }});
+</script>
 </body>
 </html>
