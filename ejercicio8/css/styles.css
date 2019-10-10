@@ -3,13 +3,13 @@ background-color: black;
 }
 
 header {
-    background-color: blue;
+    background-color: rgb(29, 29, 29);
     height: 4em;
     
 }
 
 nav ul {
-    background-color: blue;
+    background-color: rgb(29, 29, 29);
     justify-content: space-around;
     text-decoration: none;
     display: flex;
@@ -35,19 +35,27 @@ nav ul li a{
     text-align: center;
     flex-basis: 20%;
 }
+
+.uno:hover {
+    background-color: rgb(207, 83, 104);
+    color: blanchedalmond;
+    text-align: center;
+    flex-basis: 20%;
+}
+
 .dos {
-    background-color: green;
+    background-color: rgb(180, 143, 169);
     text-align: center;
     flex-basis: 50%;
 }
 .tres {
-    background-color: red;
+    background-color: pink;
     text-align: center;
     width: 30vw;
 }
 
 footer{
-    background-color: blueviolet;
+    background-color: rgb(156, 154, 158);
     display: flex;
     justify-content: center;
 }
