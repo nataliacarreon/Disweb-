@@ -1,0 +1,18 @@
+.containerp {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-gap: 10px;
+    grid-template-areas:
+    "h n"
+  }
+
+  object {
+    height: 100vh;
+    width: auto;
+    padding: 6%;
+    z-index: -1;
+  }
+

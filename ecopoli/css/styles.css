@@ -63,147 +63,181 @@ table {
     grid-template-columns: 15% repeat(2, 30%) 35%;
     grid-gap: 10px;
     grid-template-areas:
-    "h h . ."
-    ". . k ."
-    ". n n ."
-    ". . . ."
+    "h . n ."
+    "h . n ."
+    "h . n ."
+    "h . n ."
+}
 
+.imagenfondo img{
+  height: 100vh;
+  width: 100vw;
+}
+
+    /* INICIO --------propiedades menu-------- */
+
+    header {
+      display: grid;
+      grid-area: h;
+    }
+
+    main{
+      display: grid;
+      grid-area: n;
+    }
+    .menu {
+      color: rgba(0, 0, 0, 0.8);
+      display: grid;
+      cursor: pointer;
+      pointer-events: none;
+      position: fixed;
+      justify-content: space-around;
+      text-decoration: none;
+      bottom: 20px;
+      left: 30px;
+      top: 20px;
+      z-index: 1;
+    }
+
+    .menu .item{
+        top: 3rem;
+        left: 20%;
+    }
+
+    .menu .item span a{
+        text-decoration: none;
+        color: black;
+        font-family: 'DM Serif Text', serif;
+        
+
+    }
     
-}
-
-header {
-    grid-area: h;
-    background-color: rgb(0, 0, 0);
-    height: 5em;
+    .menu:hover {
+        pointer-events: all;
+      }
     
+      .label {
+        position: relative;
+        display: grid;
+        cursor: pointer;
+        pointer-events: all;
+
+      }
     
-}
-
-nav ul {
-    justify-content: space-around;
-    text-decoration: none;
-    display: flex;
-    padding: 1.7rem;
-    list-style: none;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-h2 {
-font-size: 150%;
-}
-
-p {
-  padding: 3rem;
-}
-
-main {
-  background-color: #676767;
-  display: grid;
-  grid-area: n;
-}
-
-/*
-
-.centro {
-    display: flex;
-    position: relative;
-}
-
-.centro img{
-    width: 400px;
-    height: 400px;
-    position: relative;
+      .spacer {
+        display: block;
+        height: 5rem;
+        margin-left: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        position: fixed;
+      }
     
-}
+      .spacer:before {
+        position: absolute;
+        border-bottom: 1px solid #ffffff;
+        height: 1px;
+        width: 0%;
+        transition: width 0.25s ease;
+        transition-delay: 0.7s;
+      }
+    
+      .item {
+        position: relative;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.5s ease, top 0.5s ease;
+        transition-delay: 0;
+      }
+      span {
+        transition: color 0.5s ease;
+      }
+      .item:hover span a{
+        color: #ff0000;
+      }
+      .menu:hover .spacer:before {
+        height: 100%;
+        transition-delay: 0s;
+      }
+      .menu:hover .item {
+        opacity: 1;
+        top: 3rem; 
+        left: 20%;
+      }
 
-.D {
-  position: relative;
-    z-index: 4;
-}
+      /* FIN --------propiedades menu-------- */
 
-.D2 {
-    font-size: 200px;
-    position: relative;
-    z-index: 3;
-    left: -300px;
-}
+      .info {
+        padding: 5rem 0 0 0;
+      }
+      h2{
+        font-size: 500%;
+        font-family: 'DM Serif Text', serif;
+        
+      }
 
+      p {
+        padding: 30px;
+        text-align: justify;
+        font-family: 'Open Sans', serif;
+        font-weight: ligth 300;
+      }
 
-/*circulos*/
-/*
-div .circulos {
-    display:block;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:-20px 0 0 -20px;
-    width:400px;
-    line-height:400px;
-  }
-  
-  .ripple,.ripple:before,.ripple:after {
-    display:block;
-    border-radius:2px;
-    width:1px;
-    height:1px;
-    -webkit-animation:rip 6s infinite ease-out;
-    -moz-animation:rip 6s infinite ease-out;
-  }
-  .ripple {
-    position:absolute;
-    z-index:-1;
-    top:40px;
-    left:15px;
-  }
-  .ripple:before,.ripple:after {
-    content:'';
-    position:absolute;
-  }
-  .ripple:before {-webkit-animation-delay:.2s;-moz-animation-delay:.2s;top:5px;left:0px;}
-  .ripple:after {-webkit-animation-delay:.8s;-moz-animation-delay:.8s;top:5px;left:0px;}
-  @-webkit-keyframes rip 
-  {
-    0%  {
-      box-shadow:0 0 0 90px transparent,
-                 0 0 0 0 transparent,
-                 0 0 0 0 transparent,
-                 0 0 0 0 transparent;
-    }
-    15%  {
-      box-shadow:0 0 0 0 #ffffff,
-                 0 0 0 0 rgba(255,255,255,0.4),
-                 0 0 0 0 #ffffff,
-                 0 0 0 0 rgba(0,0,0,0.08);
-    }
-    100% {
-      box-shadow:0 0 0px 0px #2c2e2e,
-                 0 0 0px 0px transparent,
-                 0 0 0px 0px #2c2e2e,
-                 0 0 0px 0px transparent;
-    }
-  }
-  @-moz-keyframes rip 
-  {
-    0%  {
-      box-shadow:0 0 0 0 transparent,
-                 0 0 0 0 transparent,
-                 0 0 0 0 transparent,
-                 0 0 0 0 transparent;
-    }
-    15%  {
-      box-shadow:0 0 0 0 #ffffff,
-                 0 0 0 0 rgba(255,255,255,0.4),
-                 0 0 0 80px #ffffff,
-                 0 0 0 0 rgba(0,0,0,0.08);
-    }
-    100% {
-      box-shadow:0 0 0px 0px #ffffff,
-                 0 0 0px 0px transparent,
-                 0 0 0px 0px #ffffff,
-                 0 0 0px 90px transparent;
-    }
-  }
+      /* INICIO -----------circulos------- */
+      .circle > * {
+        
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: pulse 3s infinite ease-out;
+     }
+      .circle-1 {
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        background-color: #f00;
+     }
+      .circle-2 {
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        margin-left: -8px;
+        background-color: #e80000;
+        animation-delay: 0.333s;
+     }
+      .circle-3 {
+        width: 12px;
+        height: 12px;
+        margin-top: -6px;
+        margin-left: -6px;
+        background-color: #ce0000;
+        animation-delay: 0.667s;
+     }
+      .circle-4 {
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+        margin-left: -4px;
+        animation-delay: 1s;
+        background-color: #b70000;
+     }
+      @keyframes pulse {
+        0% {
+          transform: scale(0) rotate(0);
+          opacity: 1;
+       }
+        100% {
+          transform: scale(2) rotate(360deg);
+          opacity: 0;
+       }
+     }
+     /* FIN -----------circulos------- */
+     /* INICIO -----------PRoyectos------- */
+     
+     
+
+     /* FIN -----------proyectos------- */
+

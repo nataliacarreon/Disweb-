@@ -1,0 +1,71 @@
+.menu {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+  position: fixed;
+  justify-content: space-around;
+  text-decoration: none;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.menu .item span a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover {
+    pointer-events: all;
+  }
+
+  .label {
+    display: block;
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .spacer {
+    display: block;
+    height: 5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  .spacer:before {
+    /* content: ""; */
+    position: absolute;
+    border-bottom: 1px solid #ffffff;
+    height: 1px;
+    width: 0%;
+    transition: width 0.25s ease;
+    transition-delay: 0.7s;
+  }
+
+  .item {
+    position: relative;
+    display: block;
+    margin-right: 1rem;
+    top: 3rem;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    transition-delay: 0;
+  }
+  span {
+    transition: color 0.5s ease;
+  }
+  .item:hover span a{
+    color: #c8ff00;
+  }
+  .menu:hover .spacer:before {
+    height: 100%;
+    transition-delay: 0s;
+  }
+  .menu:hover .item {
+    opacity: 1;
+    top: 0px;
+  }

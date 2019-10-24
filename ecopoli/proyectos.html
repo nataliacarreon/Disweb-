@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ecopoli">
+    <meta name="Natalia Carreon" content="author">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Open+Sans:300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/stylesp.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Ecopoli</title>
+</head>
+<body>
+    <div class="containerp">
+    <header>
+            <nav class="menu">
+                    <div class="label">
+                            <div class="circle">
+                                    <div class="circle-1"></div>
+                                    <div class="circle-2"></div>
+                                    <div class="circle-3"></div>
+                                    <div class="circle-4"></div>
+                                  </div>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="item"><span><a href="index.html">Nosotros</a></span></div>
+                    <div class="item"><span><a href="proyectos.html">Proyectos</a></span></div>
+                    <div class="item"><span><a href="#">Contacto</a></span></div>
+                    <div class="item"><span><a href="#">Transparencia</a></span></div>
+            </nav>
+    </header>
+    <section>
+        <object id="mapahait" type="image/svg+xml" data="images/maphait.svg"></object>
+        <!-- <img src="images/maphait.svg" alt="mapahaiti"> -->
+<script type="text/javascript" src="js/vivus.js"></script>
+<script>
+        const myVivus = new Vivus('mapahait');
+        myVivus.play(1, function() {
+        });
+    </script>
+    </section>
+</body>
+</html>
