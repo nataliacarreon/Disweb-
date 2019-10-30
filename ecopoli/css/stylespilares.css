@@ -52,3 +52,102 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
+
+/* --------INICIO---------titulos------ */
+
+
+h3 {
+	margin: 0;
+	line-height: 1;
+	font-size: 1rem;
+	font-family: 'Open Sans', serif;
+}
+
+section {
+	padding: 16rem 0 2rem 0;
+	position: relative;
+	text-align: center;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fefefe;
+	overflow: hidden;
+}
+
+.parallax-text-wrap {
+	position: relative;
+	width: 100%;
+
+}
+.parallax-text-wrap h3 {
+	position: relative;
+	z-index: 1;
+
+	
+}
+.parallax-text {
+	/* width: 100vw;  si lo ativo se va a la izquierda*/
+	position: absolute;
+	bottom: -70%;
+	left: 25%;
+	font-family: 'DM Serif Text', serif;
+	font-size: 120px;
+	/* letter-spacing: 0.28em; */
+	text-transform: uppercase;
+	opacity: 0.3;
+
+}
+
+
+/* --------FIN---------titulos------ */
+/* --------inico---------parrafos------ */
+
+#uno {
+	display: block;
+	position: absolute;
+	/* background-color: #e0a0a0; */
+	padding: 3rem 2rem 3rem 2rem;
+	z-index: 3;
+}
+
+.unotxt {
+	width: 60%;
+	padding: 0rem 5rem 0rem 5rem;
+	position: relative;
+	display: flex;
+	float: left;
+	font-family: 'Open Sans', serif;
+
+}
+
+.unoimg img {
+	padding: 0 5rem 0 2rem;
+	position: relative;
+	float: left;
+	width: 40%;
+	/* width: auto; */
+	/* display: flex; */
+}
+
+#tituno {
+	/* position: relative; */
+	padding-bottom: 9rem;
+}
+
+#titdos {
+	padding-top: 350px;
+	padding-bottom: 9rem;
+	/* position: relative; */
+}
+
+#tittre {
+	padding-top: 250px;
+	padding-bottom: 9rem;
+	/* position: relative; */
+}
+
+div {
+	display: inline-flexbox;
+}
+
