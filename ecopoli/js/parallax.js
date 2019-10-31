@@ -3,7 +3,7 @@ $( function(){
     var scrollTop = $(window).scrollTop();
 
     function lol( $this ) {
-      var translate = (scrollTop - $($this).data('orig-offset')) / $(window).height() * 150;
+      var translate = (scrollTop - $($this).data('orig-offset')) / $(window).height() * 250;
       $($this).css({transform: 'translate3d(0,' + translate +'%'+', 0)'});
     }
 

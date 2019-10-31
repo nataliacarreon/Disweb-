@@ -216,7 +216,8 @@ nav {
 	
 }
 li {
-    display: inline-block;
+	display: inline-block;
+	padding: 0rem 0rem 5rem 0rem;
 }
 li a {
     color: black;
@@ -341,26 +342,27 @@ a:hover {
 /* --------INICIO---------titulos------ */
 
 
-h3 {
-	margin: 0;
+ h3 {
+	 display: flex;
+	 position: absolute;
+	 justify-content: center;
 	line-height: 1;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-family: 'Open Sans', serif;
 }
 
 section {
-	padding: 16rem 0 2rem 0;
+	padding: 6rem 0 6rem 0;
 	position: relative;
 	text-align: center;
-	height: 20vh;
+	height: 30vh;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-color: #fefefe;
-	overflow: hidden;
-	background-image: url(../images/fff.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* background-color: #fefefe; */
+	/* overflow: hidden; */
+
 	/* background-color: #ffff05; */
 }
 
@@ -368,7 +370,7 @@ section {
 .parallax-text-wrap {
 	position: relative;
 	width: 100%;
-
+	
 }
 .parallax-text-wrap h3 {
 	position: relative;
@@ -379,7 +381,6 @@ section {
 .parallax-text {
 	/* width: 100vw;  si lo ativo se va a la izquierda*/
 	position: absolute;
-	bottom: -70%;
 	left: 25%;
 	font-family: 'DM Serif Text', serif;
 	font-size: 120px;
@@ -420,22 +421,28 @@ section {
 	/* display: flex; */
 }
 
-#tituno {
+div #tituno {
+	overflow: hidden;
 	/* position: relative; */
-	padding-bottom: 9rem;
+	position: relative;
+	display: flex;
+	height: 30vh;
+	padding-top: 4rem;
+	margin-bottom: 7vh;
+	background-image: url(../images/mujer.png);
+	background-size: 1000px;
+	background-repeat: no-repeat;
 }
 
 #titdos {
 	padding-top: 350px;
-	padding-bottom: 9rem;
-	/* position: relative; */
+	padding-bottom: 7vh;
 }
 
 #tittre {
 	padding-top: 250px;
 	padding-bottom: 9rem;
-	/* position: relative; */
-}
+} 
 
 div {
 	display: inline-flexbox;
